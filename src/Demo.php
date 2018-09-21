@@ -2,6 +2,8 @@
 
 namespace Demo;
 
+use Demo\Lib\GraphqApiClient;
+
 const ListId = 123;
 
 class Demo
