@@ -1,8 +1,8 @@
 mutation($listId: Int!, $recipientIds: [Int!]!)
 {
-  AddRecipientToList(listId:$listId, recipientId: $recipientIds)
-  {
-    id
-    countRecipients
-  }
+   AddRecipientToList(listId:$listId, recipientId: $recipientIds)
+   {
+     id
+     countRecipients
+   }
 }
