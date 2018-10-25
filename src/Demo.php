@@ -10,7 +10,7 @@ class Demo
 {
     public function main()
     {
-        GraphqApiClient::Initialize("https://samskipti.zenter.is/Api/V2");
+        GraphqApiClient::Initialize("https://vrs.africaprudential.com/Api/V2");
 		GraphqApiClient::Version();
 
 		$token = GraphqApiClient::Login("<ApiUser>", "<ApiPassphrase>");
@@ -20,7 +20,7 @@ class Demo
 			throw new Exception("Could not login");
 		}
 
-		GraphqApiClient::Initialize("https://samskipti.zenter.is/Api/V2?token={$token}");
+		GraphqApiClient::Initialize("https://vrs.africaprudential.com/Api/V2?token={$token}");
 		if (!GraphqApiClient::IsPriviliged())
 		{
 			throw new Exception("Login attempt failed");
